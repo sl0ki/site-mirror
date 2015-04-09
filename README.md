@@ -12,17 +12,8 @@ $proxy = new Proxy();
 $proxy->render('http://stackoverflow.com/' . $_GET['url']);
 ```
 
-### How to use
-Getting started is simple: include jQuery, include pep, then:
-```php
-include("Proxy.php");
-$proxy = new Proxy();
-
-$proxy->render('http://stackoverflow.com/' . $_GET['url']);
-```
-
 ### Modify request or response 
-Getting started is simple: include jQuery, include pep, then:
+
 ```php
 $proxy->setRequestHook(function(&$header, &$body) {
     // Modify some header or body before send request
